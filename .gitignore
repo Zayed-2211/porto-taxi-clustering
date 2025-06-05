@@ -3,7 +3,7 @@ data/raw/
 data/processed/visualization_maps/
 *.csv
 *.geojson
-*.gpkg
+!data/processed/pickup_locations.gpkg
 *.html
 *.zip
 
@@ -32,6 +32,7 @@ wheels/
 # Jupyter Notebook
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
+!porto_taxi_analysis.ipynb
 
 # Virtual Environment
 venv/
@@ -64,6 +65,6 @@ db.sqlite3
 db.sqlite3-journal
 
 # Project specific
-notebooks/archive/
-*.ipynb
-!notebooks/porto_taxi_analysis.ipynb
+data/*
+
+process_pickup_locations.py
